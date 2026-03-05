@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 
 @Mixin(NetHandler.class)
-public class ConnectionMixin implements INetHandler {
+public class NetHandlerMixin implements INetHandler {
 
     @Shadow public void unexpectedPacket(Packet par1Packet) {}
 

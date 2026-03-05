@@ -1,4 +1,4 @@
-package net.wensc.mitemod.child.mixin;
+package net.wensc.mitemod.child.mixin.cilent;
 
 import net.minecraft.NetClientHandler;
 import net.minecraft.NetHandler;

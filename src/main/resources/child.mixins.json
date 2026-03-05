@@ -5,23 +5,23 @@
   "target": "DEFAULT",
   "minVersion": "0.8.3",
   "client": [
-    "ClientPlayerMixin",
-    "EntityRendererMixin",
-    "GameSettingsMixin",
-    "MinecraftMixin",
-    "RenderPlayerMixin"
+    "cilent.ClientPlayerMixin",
+    "cilent.EntityRendererMixin",
+    "cilent.GameSettingsMixin",
+    "cilent.MinecraftMixin",
+    "cilent.NetClientHandlerMixin",
+    "cilent.RenderPlayerMixin"
   ],
   "injectors": {
     "defaultRequire": 1
   },
   "mixins": [
-    "ConnectionMixin",
-    "EntityLivingBaseMixin",
-    "EntityMixin",
-    "EntityPlayerMixin",
-    "NetClientHandlerMixin",
-    "NetServerHandlerMixin",
-    "PlayerCapabilitiesMixin",
-    "ServerPlayerMixin"
+    "entity.EntityLivingBaseMixin",
+    "entity.EntityMixin",
+    "entity.EntityPlayerMixin",
+    "entity.PlayerCapabilitiesMixin",
+    "entity.ServerPlayerMixin",
+    "NetHandlerMixin",
+    "NetServerHandlerMixin"
   ]
 }

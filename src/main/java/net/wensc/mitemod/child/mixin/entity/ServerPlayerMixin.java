@@ -1,4 +1,4 @@
-package net.wensc.mitemod.child.mixin;
+package net.wensc.mitemod.child.mixin.entity;
 
 import net.minecraft.EntityPlayer;
 import net.minecraft.ServerPlayer;

@@ -1,4 +1,4 @@
-package net.wensc.mitemod.child.mixin;
+package net.wensc.mitemod.child.mixin.cilent;
 
 import net.minecraft.ClientPlayer;
 
