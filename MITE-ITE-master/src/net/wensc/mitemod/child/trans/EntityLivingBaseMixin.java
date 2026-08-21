@@ -9,7 +9,15 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 @Mixin(EntityLiving.class)
 public class EntityLivingBaseMixin {
     @Redirect(method = "onDeathUpdate", at = @At(value = "INVOKE", target = "Lnet/minecraft/EntityLiving;isChild()Z"))
-    public boolean isChild(EntityLiving entityLiving) {
+    public boolean isChildOnDeathUpdate(EntityLiving entityLiving) {
+        if(entityLiving instanceof EntityPlayer){
+            return false;
+        }
+        return entityLiving.isChild();
+    }
+
+    @Redirect(method = "onDeath", at = @At(value = "INVOKE", target = "Lnet/minecraft/EntityLiving;isChild()Z"))
+    public boolean isChildOnDeath(EntityLiving entityLiving) {
         if(entityLiving instanceof EntityPlayer){
             return false;
         }

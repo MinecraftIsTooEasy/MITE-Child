@@ -33,7 +33,7 @@ public abstract class EntityPlayerMixin extends EntityLiving {
     public void onLivingUpdate(CallbackInfo ci) {
         if (!this.worldObj.isRemote) {
             if(this.isChild()){
-                this.setSizeProne();
+                this.setSizeChild();
             }
         }
         if(this.isChild()){
